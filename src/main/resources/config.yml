@@ -1,0 +1,26 @@
+# ==========================================================
+#         ROOSTERGENICS - GENÉTICA PROFUNDA Y COMBATE
+# ==========================================================
+
+settings:
+  # Modo Nuzlocke: si es false, los gallos derrotados entran en NOQUEO (cooldown de descanso o veterinario).
+  # Si es true, entran en MODO HARDCORE (muerte permanente del gallo derrotado).
+  nuzlocke-mode: false
+  
+  # Minutos de recuperación obligatoria tras quedar noqueado (si no usan veterinario)
+  knockout-recovery-minutes: 20
+  
+  # Costo de tratamiento veterinario para revivir inmediatamente (en fichas/monedas)
+  veterinary-revive-cost: 15.0
+  
+  # Costo de dieta de semillas doradas (restaura energía al 100%)
+  nutrition-meal-cost: 5.0
+  
+  # Costo de crianza genética en el laboratorio
+  breeding-cost: 10.0
+  
+  # Radio en bloques para el anuncio local de duelos y apuestas
+  spectator-broadcast-radius: 30.0
+
+  # Tiempo en segundos de la fase de apuestas de espectadores antes de soltar a los gallos
+  duel-betting-time-seconds: 15

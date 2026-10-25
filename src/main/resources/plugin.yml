@@ -1,0 +1,20 @@
+name: Roostergenics
+version: '1.0.0'
+main: com.dark.roostergenics.RoostergenicsPlugin
+api-version: '1.21'
+author: Dark
+description: Sistema Avanzado de Gallos de Combate con Genética Profunda RoosterGenics, Crianza, Objetos y Duelos 1v1
+
+commands:
+  gallos:
+    description: Comando principal de RoosterGenics
+    aliases: [rg, roostergenics, peleagallos, roosters, palenque]
+    permission: roostergenics.use
+
+permissions:
+  roostergenics.use:
+    description: Permite a cualquier jugador acceder a su corral, crianza, entrenar, liberar y combatir
+    default: true
+  roostergenics.admin:
+    description: Permite acceder a los comandos de administración y configuración
+    default: op
