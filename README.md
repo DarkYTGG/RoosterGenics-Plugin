@@ -1,66 +1,69 @@
-# 🐓 RoosterGenics - Plugin de Minecraft
+<div align="center">
 
-[![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://adoptium.net/)
-[![Platform](https://img.shields.io/badge/Platform-Paper%20%7C%20Purpur%20%7C%20Folia-blue.svg)](https://papermc.io/)
-[![Version](https://img.shields.io/badge/Minecraft-1.21.11-green.svg)](https://papermc.io/)
-[![Architecture](https://img.shields.io/badge/Threading-Folia--Aware-brightgreen.svg)]()
+  # 🐓 RoosterGenics — Advanced Minecraft Plugin
+  ### Sistema Integral de Gallos de Combate · Genética Mendeliana · Arenas 1v1 · Folia-Aware
+  ### Advanced Fighting Roosters Plugin · Deep Genetics · 1v1 Arenas · Folia Multithreading
 
-**RoosterGenics** es un plugin integral y avanzado para Minecraft (Paper / Purpur / Folia 1.21.11) que introduce un sistema completo de **Gallos de Combate con Genética Profunda**, crianza con herencia alélica mendeliana, entrenamientos, arenas de combate (palenques) 1v1 con apuestas en tiempo real, gimnasios con líderes NPC y compatibilidad nativa multihilo.
+  <p align="center">
+    <a href="#-versión-en-español"><b>🇪🇸 Versión en Español</b></a>
+    &nbsp;•&nbsp;
+    <a href="#-english-version"><b>🇬🇧 English Version</b></a>
+  </p>
 
----
+  <p align="center">
+    <a href="https://adoptium.net/"><img src="https://img.shields.io/badge/Java-21_(LTS)-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"></a>
+    <a href="https://papermc.io/"><img src="https://img.shields.io/badge/Platform-Paper_%7C_Purpur_%7C_Folia-02303A?style=for-the-badge" alt="Platform"></a>
+    <img src="https://img.shields.io/badge/Minecraft-1.21.1-10B981?style=for-the-badge&logo=minecraft&logoColor=white" alt="Minecraft 1.21">
+    <img src="https://img.shields.io/badge/Architecture-Folia--Aware-brightgreen?style=for-the-badge" alt="Folia-Aware">
+  </p>
 
-## 🌟 Características Principales
+  <p align="center">
+    <a href="https://darkytgg.github.io/Wiki-RoosterGenics/"><b>🌐 Documentación & Wiki Oficial / Official Wiki</b></a>
+    &nbsp;•&nbsp;
+    <a href="https://github.com/DarkYTGG/Wiki-RoosterGenics"><b>📖 Repositorio Wiki</b></a>
+  </p>
 
-### 🧬 Genética Profunda (RoosterGenics)
-- **Sistema Alélico Real**: Genes dominantes y recesivos que determinan tanto estadísticas de combate como fenotipos visuales.
-- **Estadísticas de Combate Heredables**: Fuerza, Velocidad, Resistencia, Agresividad y Precisión.
-- **Árbol Genealógico y Linaje**: Trazabilidad completa de progenitores y generaciones en cada gallo.
-
-### 🐣 Crianza e Incubación
-- **Emparejamiento Genético**: Combina reproductores seleccionados evaluando compatibilidad y probabilidad de mutaciones genéticas.
-- **Incubación y Cuidado**: Proceso de eclosión con cuidados especiales para maximizar los atributos del polluelo.
-
-### ⚔️ Duelos 1v1, Arenas y Palenques
-- **Arenas Protegidas (Palenques)**: Generación y protección estricta contra griefing e interferencia externa durante el combate.
-- **Aislamiento Concurrente de Sesiones**: Motor de combate determinista basado en leases de ejecución física, garantizando cero desincronizaciones (`CRIT-02`).
-- **Sistema de Apuestas (Spectator Betting)**: Liquidación atómica y segura de apuestas para espectadores durante las peleas.
-
-### 🥊 Gimnasios y Líderes NPC
-- **Líderes de Gimnasio**: Desafíos con dificultad escalonada y recompensas exclusivas.
-- **Entrenadores Adaptativos**: NPCs que ajustan sus tácticas y gallos al nivel del jugador.
-- **Gestión de Entidades Robusta**: Sistema de reconciliación de entidades y claims (`CRIT-04`) inmune a reinicios, unloads de chunks y cambios de dimensión.
-
-### 🏥 Centro de Recuperación y Enfermería
-- **Tratamiento de Lesiones**: Mecánica de salud, curaciones tras combates intensos con Enfermeras NPC.
-- **Objetos Sostenibles (Held Items) y Bálsamos**: Equipamiento que potencia estadísticas y otorga habilidades pasivas especiales durante el combate.
-
-### ⚡ Arquitectura Multihilo (Folia-Ready)
-- Diseñado desde cero para entornos masivos (200-300+ jugadores).
-- `TaskSchedulerAdapter` inteligente: usa `RegionScheduler` y `EntityScheduler` en Folia, y los programadores equivalentes en Paper.
-- Cero accesos inseguros a la Bukkit API desde hilos asíncronos.
+</div>
 
 ---
 
-## 📦 Contenido del Repositorio
+<a id="-versión-en-español"></a>
+## 🇪🇸 Versión en Español
 
-- **`src/main/java/`**: Código fuente modular y optimizado en Java 21.
-- **`src/main/resources/`**: Configuraciones por defecto (`config.yml`, `plugin.yml`).
-- **`resourcepack/`**: Modelos JSON, texturas personalizadas y configuraciones para Minecraft.
-- **`Roostergenics-ResourcePack.zip`**: Pack de recursos listo para distribuir o cargar en el servidor.
-- **`Roostergenics-1.0.0.jar`**: Artefacto binario precompilado listo para su despliegue en la carpeta `plugins/`.
-- **`pom.xml`**: Definición de dependencias Maven (Paper API 1.21.11-R0.1-SNAPSHOT).
-- **`build.ps1` / `run_tests.ps1`**: Scripts de compilación y suites de validación formal de concurrencia y persistencia.
+### 🌟 Descripción General
+
+**RoosterGenics** es un plugin integral y avanzado para servidores de Minecraft (**Paper / Purpur / Folia 1.21.1**) que introduce un sistema completo de **Gallos de Combate con Genética Profunda**, crianza con herencia alélica mendeliana, entrenamientos, arenas de combate (palenques) 1v1 con apuestas en tiempo real, gimnasios con líderes NPC y compatibilidad nativa multihilo.
 
 ---
 
-## 🎮 Comandos y Permisos
+### ✨ Características Principales
 
-### Comandos
+- 🧬 **Genética Profunda:** Genes dominantes y recesivos que determinan estadísticas de combate (Fuerza, Velocidad, Resistencia, Agresividad, Precisión), fenotipos de plumaje y árboles genealógicos completos.
+- 🥚 **Crianza e Incubación:** Emparejamiento genético, coeficiente de consanguinidad (COI) y probabilidad de mutaciones genéticas o defectos por endogamia.
+- ⚔️ **Duelos 1v1 y Palenques:** Arenas protegidas contra griefing con techo de vuelo de 4.5 bloques, emparejamiento determinista y sistema de apuestas atómicas para espectadores (`/rg apostar`).
+- 🏛️ **6 Gimnasios Temáticos & Gran Liga:** Desafíos contra líderes NPC con dificultad progresiva, medallas coleccionables y recompensas de alto nivel.
+- 🏥 **Centro Médico & Held Items:** Tratamiento de heridas, curaciones con la Enfermera del Palenque y 14 objetos sostenibles de combate (Banda Focus, Vidasfera, Chaleco Asalto, etc.).
+- ⚡ **Arquitectura Multihilo (Folia-Ready):** Totalmente optimizado para servidores masivos con `TaskSchedulerAdapter`, interactuando de forma segura con `RegionScheduler` y `EntityScheduler`.
+
+---
+
+### 📦 Contenido del Repositorio
+
+- `src/main/java/`: Código fuente modular y fuertemente tipado en Java 21.
+- `src/main/resources/`: Archivos de configuración por defecto (`config.yml`, `plugin.yml`).
+- `resourcepack/`: Modelos JSON 3D, texturas y sonidos personalizados.
+- `Roostergenics-ResourcePack.zip`: Pack de recursos listo para clientes o `server.properties`.
+- `Roostergenics-1.0.0.jar`: Binario precompilado listo para la carpeta `plugins/`.
+- `pom.xml`: Definición de dependencias Maven (Paper API 1.21.1-R0.1-SNAPSHOT).
+
+---
+
+### ⌨️ Comandos y Permisos
+
 | Comando Principal | Aliases | Descripción |
 | :--- | :--- | :--- |
 | `/gallos` | `/rg`, `/roostergenics`, `/peleagallos`, `/roosters`, `/palenque` | Abre el menú principal de RoosterGenics (corral, crianza, entrenamiento, duelos). |
 
-### Permisos
 | Permiso | Descripción | Por Defecto |
 | :--- | :--- | :--- |
 | `roostergenics.use` | Permite acceder a las funciones de jugador (corral, crianza, entrenar, combatir). | `true` (Todos) |
@@ -68,37 +71,70 @@
 
 ---
 
-## ⚙️ Requisitos e Instalación
+### 🚀 Instalación
 
-### Requisitos
-- **Servidor**: Paper, Purpur o Folia `1.21.11` (o compatible).
-- **Java**: Java 21 (LTS) o superior.
-
-### Instalación
-1. Descarga el archivo `Roostergenics-1.0.0.jar` desde los releases o la raíz de este repositorio.
-2. Colócalo en la carpeta `plugins/` de tu servidor.
-3. Coloca el pack de recursos `Roostergenics-ResourcePack.zip` en tu cliente o configúralo en `server.properties`.
+1. Descarga el archivo **`Roostergenics-1.0.0.jar`** de este repositorio.
+2. Cópialo en la carpeta `plugins/` de tu servidor Paper, Purpur o Folia 1.21.
+3. Instala el resourcepack `Roostergenics-ResourcePack.zip`.
 4. Inicia o reinicia el servidor.
-5. Edita `plugins/Roostergenics/config.yml` a tu preferencia.
 
 ---
 
-## 🛠️ Compilación y Tests
+<a id="-english-version"></a>
+## 🇬🇧 English Version
 
-Para compilar el proyecto manualmente o ejecutar la suite de verificación formal:
+### 🌟 Overview
 
-### Compilación rápida (PowerShell)
-```powershell
-.\build.ps1
-```
-
-### Ejecución de Pruebas Formales (Gates CRIT-02 & CRIT-04)
-```powershell
-.\run_tests.ps1
-```
+**RoosterGenics** is a comprehensive, production-grade Minecraft plugin (**Paper / Purpur / Folia 1.21.1**) that introduces a complete **Fighting Roosters system with Deep Mendelian Genetics**, allelic inheritance, physical training, 1v1 battle arenas with real-time spectator betting, gym leaders, and native Folia multithreading support.
 
 ---
 
-## 📄 Licencia
+### ✨ Key Features
 
-Desarrollado por **Dark** (@DarkYTGG). Todos los derechos reservados.
+- 🧬 **Deep Genetics Engine:** Dominant and recessive alleles controlling combat stats (Strength, Speed, Defense, Aggressiveness, Accuracy), visual plumage variations, and genealogical bloodlines.
+- 🥚 **Breeding & Incubation:** Selective pairing, Inbreeding Coefficient (COI) calculations, hybrid vigor, and genetic mutation tables.
+- ⚔️ **1v1 Arenas & Palenques:** Grief-protected arenas with strict 4.5-block flight caps, deterministic combat isolation, and atomic spectator betting mechanics (`/rg apostar`).
+- 🏛️ **6 Themed Gyms & Championship League:** Progressive NPC gym leader challenges with badges, held items, and exclusive tournament rewards.
+- 🏥 **Medical Center & Held Items:** Post-combat injury mechanics, treatment with the Nurse NPC, and 14 competitive held items (Focus Sash, Life Orb, Assault Vest).
+- ⚡ **Folia-Aware Multithreading:** Built from the ground up for high-capacity servers (200-300+ players) leveraging `RegionScheduler` and `EntityScheduler` safely.
+
+---
+
+### 📦 Repository Structure
+
+- `src/main/java/`: High-performance, modular Java 21 codebase.
+- `src/main/resources/`: Default configurations (`config.yml`, `plugin.yml`).
+- `resourcepack/`: Custom 3D JSON models, sounds, and UI textures.
+- `Roostergenics-ResourcePack.zip`: Pack ready for distribution or server-resource-pack configuration.
+- `Roostergenics-1.0.0.jar`: Precompiled artifact ready for your server's `plugins/` folder.
+- `pom.xml`: Maven dependency configuration (Paper API 1.21.1).
+
+---
+
+### ⌨️ Commands & Permissions
+
+| Command | Aliases | Description |
+| :--- | :--- | :--- |
+| `/gallos` | `/rg`, `/roostergenics`, `/peleagallos`, `/roosters`, `/palenque` | Opens the main GUI menu (coop, breeding, training, duels). |
+
+| Permission | Description | Default |
+| :--- | :--- | :--- |
+| `roostergenics.use` | Grants player access to core gameplay features. | `true` (Everyone) |
+| `roostergenics.admin` | Access to administrative commands and reloading. | `op` |
+
+---
+
+### 🚀 Installation
+
+1. Download **`Roostergenics-1.0.0.jar`**.
+2. Drop it into your server's `plugins/` directory (Paper, Purpur, or Folia 1.21).
+3. Distribute or link `Roostergenics-ResourcePack.zip`.
+4. Start or restart your server.
+
+---
+
+## 👨‍💻 Autor / Author
+
+Desarrollado por / Built by **DarkYTGG** — Desarrollador de Software & Estudiante de TSU en Informática.
+- 🌐 GitHub: [@DarkYTGG](https://github.com/DarkYTGG)
+- 📖 Wiki Oficial: [darkytgg.github.io/Wiki-RoosterGenics](https://darkytgg.github.io/Wiki-RoosterGenics/)
